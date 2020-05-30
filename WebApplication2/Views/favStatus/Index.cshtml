@@ -1,0 +1,48 @@
+﻿@model IEnumerable<WebApplication2.Models.favStatus>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>My Favs</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.code.Title)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.code.CodeLanguge)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.code.date)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+        <tr>
+
+            <td>
+                <a class="btn btn-success" asp-controller="Codes" asp-action="Details" asp-route-id="@item.code.Id">
+                    @Html.DisplayFor(modelItem => item.code.Title)
+                </a>
+            </td>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.code.CodeLanguge)
+            </td>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.code.date)
+            </td>
+            <td>
+                <a class="btn btn-danger" asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+    }
+        </tbody>
+    </table>

@@ -1,0 +1,224 @@
+﻿Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets.
+
+Sticky footer styles
+--------------------------------------------------
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.border-top {
+    border-top: 1px solid #e5e5e5;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+    font-size: 1rem;
+    line-height: inherit;
+}
+
+Sticky footer styles
+--------------------------------------------------
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    Margin bottom by footer height;
+    margin-bottom: 60px;
+    background-color: white;
+}
+
+.search {
+    float: left;
+    padding: 2%;
+}
+
+.container {
+    background-color: rgb(133, 202, 219);
+    color: black;
+    border-radius: 25px;
+    width: 100%;
+    box-shadow: 14px 15px 10px -10px rgba(0,0,0,0.53);
+}
+
+.btn-danger {
+    background-color: lightblue;
+    color: black;
+    border-radius: 10px;
+}
+
+    .btn-danger:hover {
+        box-shadow: 8px 9px 8px -5px rgba(0,0,0,0.53);
+        border-radius: 10px;
+    }
+
+.btn-warning {
+    background-color: lightblue;
+    color: black;
+    border-radius: 10px;
+}
+
+    .btn-warning:hover {
+        box-shadow: 8px 9px 8px -5px rgba(0,0,0,0.53);
+        border-radius: 10px;
+    }
+
+bg-secondary {
+    background-color: lightblue;
+    color: black;
+    border-radius: 10px;
+}
+
+    bg-secondary:hover {
+        box-shadow: 8px 9px 8px -5px rgba(0,0,0,0.53);
+        border-radius: 10px;
+    }
+
+.btn-primary {
+    background-color: lightblue;
+    color: black;
+    border-radius: 10px;
+}
+
+    .btn-primary:hover {
+        box-shadow: 8px 9px 8px -5px rgba(0,0,0,0.53);
+        border-radius: 10px;
+    }
+
+.btn-secondary {
+    background-color: lightblue;
+    color: black;
+    border-radius: 10px;
+}
+
+    .btn-secondary:hover {
+        box-shadow: 8px 9px 8px -5px rgba(0,0,0,0.53);
+        border-radius: 10px;
+    }
+
+.btn-light {
+    background-color: lightblue;
+    color: black;
+    border-radius: 10px;
+}
+
+    .btn-light:hover {
+        box-shadow: 8px 9px 8px -5px rgba(0,0,0,0.53);
+        border-radius: 10px;
+    }
+
+.btn-success {
+    background-color: lightblue;
+    color: black;
+    border-radius: 10px;
+}
+
+    .btn-success:hover {
+        box-shadow: 8px 9px 8px -5px rgba(0,0,0,0.53);
+        border-radius: 10px;
+    }
+
+.nav-link {
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    align-content: space-around;
+    text-align: center;
+    background-color: lightblue;
+    color: black;
+    width: 80%;
+    border-radius: 10px;
+    border: 2px solid #ffffff;
+}
+
+
+
+
+    .nav-link:hover {
+        box-shadow: 8px 9px 8px -5px rgba(0,0,0,0.53);
+        border-radius: 10px;
+        background-color: white;
+    }
+
+.nav-item {
+    display: flex;
+    justify-content: space-around;
+    width: 100%
+}
+
+    .nav-item:hover {
+        color: white
+    }
+
+.nameseter {
+    text-align: center;
+    width: 100%;
+}
+
+.row1 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.row2 {
+    width: 100%;
+    display: block;
+    justify-content: space-between;
+    align-content: space-between;
+    text-align: center;
+}
+
+.row3 {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    align-content: space-around;
+}
+
+.row4 {
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding: .5em;
+}
+
+.row5 {
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+
+
+.dropdown-menu {
+    background-color: lightblue;
+    color: #140a1f;
+}
+
+    .dropdown-menu:hover {
+        color: #140a1f;
+    }
+
+.dropdown-item {
+    background-color: lightblue;
+}
+
+    .dropdown-item:hover {
+        color: #a17fc7;
+        background-color: white;
+    }

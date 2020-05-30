@@ -1,0 +1,55 @@
+﻿
+@model IEnumerable<WebApplication2.Models.Code>
+
+@{
+    ViewData["Title"] = "Index";
+}
+<h1>Code List</h1>
+<form asp-controller="Codes" asp-action="IndexTitleSearch">
+
+    <p class="search">
+        <br /> <input type="text" name="SearchString">
+        <input class="btn btn-primary" type="submit" value="Search" />
+    </p>
+</form>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Title)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CodeLanguge)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Descreption)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.date)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+        <tr>
+            <td>
+                <a class="btn btn-success" asp-action="Details" asp-route-id="@item.Id">
+                    @Html.DisplayFor(modelItem => item.Title)
+                </a>
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CodeLanguge)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Descreption)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.date)
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>

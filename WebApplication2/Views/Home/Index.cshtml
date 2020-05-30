@@ -1,0 +1,52 @@
+﻿@model IEnumerable<WebApplication2.Models.Code>
+
+@{
+    ViewData["Title"] = "Home Page";
+
+}
+
+<div class="text-center">
+    <h1 class="display-4">Newest Code</h1>
+</div>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Title)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CodeLanguge)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Descreption)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.date)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    <a class="btn btn-success" asp-controller="Codes" asp-action="Details" asp-route-id="@item.Id">
+                        @Html.DisplayFor(modelItem => item.Title)
+                    </a>
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CodeLanguge)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Descreption)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.date)
+                </td>
+                <td></td>
+            </tr>
+        }
+    </tbody>
+</table>

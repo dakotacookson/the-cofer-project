@@ -1,0 +1,50 @@
+﻿@model WebApplication2.Models.Code
+
+@{
+    ViewData["Title"] = "Details";
+}
+<h1>Details</h1>
+<div>
+    <h4>Code</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Title)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Title)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CodeLanguge)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CodeLanguge)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Descreption)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Descreption)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.date)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.date)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CodeDeposit)
+        </dt>
+        <dd class="col-sm-10">
+            <pre><code class="@Html.DisplayFor(model => model.CodeLanguge)">@Html.DisplayFor(model => model.CodeDeposit)</code></pre>
+            <button class="btn-primary" onclick="themecode()"> Light Theme</button>
+            <button class="btn-primary" onclick="themecode3()"> Default Theme</button>
+            <button class="btn-primary" onclick="themecode2()"> Dark Theme</button>
+        </dd>
+
+    </dl>
+</div>
+<div>
+        <a class="btn btn-primary"  asp-controller="favStatus" asp-action="Create" asp-route-codeid="@Model.Id"> Like This Post</a>
+        <a class="btn btn-success" asp-action="Index">Back to List</a>
+</div>

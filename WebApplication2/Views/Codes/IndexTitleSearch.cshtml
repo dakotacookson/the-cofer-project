@@ -1,0 +1,56 @@
+﻿@model IEnumerable<WebApplication2.Models.Code>
+    <link href="themes/prism.css" rel="stylesheet" />
+
+    @{
+        ViewData["Title"] = "IndexTitleSearch";
+    }
+
+    <h1>Search Results</h1>
+    <table class="table">
+        <form asp-controller="Codes" asp-action="IndexTitleSearch">
+
+            <p class="search">
+                 <br /> <input type="text" name="SearchString">
+                <input class="btn btn-primary" type="submit" value="Search" />
+            </p>
+        </form>
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Title)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.CodeLanguge)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Descreption)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.date)
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+            <tr>
+                <td>
+                    <a class="btn btn-success"asp-action="Details" asp-route-id="@item.Id">
+                        @Html.DisplayFor(modelItem => item.Title)
+                    </a>
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CodeLanguge)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Descreption)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.date)
+                </td>
+                <td></td>
+                <script src="prism.js"></script>
+            </tr>
+            }
+        </tbody>
+    </table>
