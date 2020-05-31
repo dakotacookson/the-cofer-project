@@ -7,6 +7,9 @@ html {
     font-size: 14px;
 }
 
+
+}
+
 @media (min-width: 768px) {
     html {
         font-size: 16px;
@@ -21,9 +24,11 @@ html {
     border-bottom: 1px solid #e5e5e5;
 }
 
+
 .box-shadow {
     box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
 }
+
 
 button.accept-policy {
     font-size: 1rem;
@@ -145,7 +150,6 @@ bg-secondary {
     border-radius: 10px;
     border: 2px solid #ffffff;
 }
-
 
 
 
